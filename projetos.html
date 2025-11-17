@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projetos — Associação Exemplo</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<img src="images/logo.jpg" alt="Logo Associação Exemplo" class="logo">
+<nav aria-label="Menu principal">
+<ul class="menu">
+<li><a href="index.html">Início</a></li>
+<li><a href="projetos.html">Projetos</a></li>
+<li><a href="cadastro.html">Cadastro</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<h1>Projetos Sociais</h1>
+<p>Conheça alguns dos nossos projetos e como você pode participar.</p>
+
+
+<section aria-labelledby="proj1">
+<h2 id="proj1">Projeto Alfabetização</h2>
+<img src="images/projeto-1.jpg" alt="Crianças em sala de aula" class="project-img">
+<p>Projeto destinado a alfabetização de crianças em idade escolar.</p>
+<p><strong>Como ajudar:</strong> Seja voluntário em nossas aulas, ou faça doações de material escolar.</p>
+</section>
+
+
+<section aria-labelledby="donate">
+<h2 id="donate">Como doar</h2>
+<p>As doações podem ser feitas por transferência bancária ou via boleto — entre em contato para instruções.</p>
+<p>Ou preencha o formulário de <a href="cadastro.html">cadastro</a> para se tornar um voluntário.</p>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year2"></span> Associação Exemplo</p>
+</div>
+</footer>
+<script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

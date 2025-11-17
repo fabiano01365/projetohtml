@@ -1,29 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale-1.0">
-<title> Primeiro Projeto </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Associação Exemplo — Página Inicial</title>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1>Bem-vindo ao HTML 5! </h1>
-<h2>Olá </h2>
-<h3> Bora</h3>
-<h6> Boa</h6>
-<p> Este é um paragrafo de exemplo </p>
-<p> Este é um paragrafo <strong> contem negrito</strong> e <em> texto italico </em> </p>
-<!---Lista não Ordenada -->
-<ul>
-<li> item 1 </li>
-<li> item 2 </li>
-<li> item 3 </li>
+<header class="site-header">
+<div class="container">
+<img src="images/logo.jpg" alt="Logo Associação Exemplo" class="logo">
+<nav aria-label="Menu principal">
+<ul class="menu">
+<li><a href="index.html">Início</a></li>
+<li><a href="projetos.html">Projetos</a></li>
+<li><a href="cadastro.html">Cadastro</a></li>
 </ul>
-<!---Lista Ordenada -->
-<ol>   
-<li> Primeira passo </li>
-<li> Segundo passo  </li>
-<li> terceiro passo </li>
-</ol>
-<h2><a href="tabela.html"> Clique aqui para ver sua Tabela de Preços  </a></h2>
+</nav>
+</div>
+</header>
+
+
+<main>
+<section class="hero" aria-labelledby="hero-title">
+<div class="container">
+<h1 id="hero-title">Associação Exemplo — Transformando Vidas</h1>
+<p>Atuamos em educação, cultura e assistência social. Junte-se a nós como voluntário ou doador.</p>
+<img src="images/hero.jpg" alt="Voluntários trabalhando" class="hero-img">
+</div>
+</section>
+
+
+<section class="about container" aria-labelledby="about-title">
+<h2 id="about-title">Quem somos</h2>
+<p>A Associação Exemplo é uma organização sem fins lucrativos dedicada a promover ações sociais na comunidade local.</p>
+<article>
+<h3>Contato</h3>
+<address>
+Rua Exemplo, 123 — Centro<br>
+São Paulo — SP<br>
+<a href="tel:+5511999999999">(11) 99999-9999</a><br>
+<a href="mailto:contato@associacaoexemplo.org">contato@associacaoexemplo.org</a>
+</address>
+</article>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year"></span> Associação Exemplo — Todos os direitos reservados.</p>
+</div>
+</footer>
+
+
+<script>
+// atualiza o ano no rodapé
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
